@@ -1,0 +1,7 @@
+ext.versions=[
+            spring  : '5.3.20',
+]
+
+ext.libraries=[
+    'spring-context'  :"org.springframework:spring-context:${versions.spring}",
+]

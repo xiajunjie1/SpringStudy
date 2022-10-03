@@ -1,0 +1,15 @@
+Spring设计架构
+    Spring-Context依赖包
+    Spring提供以下模块
+        Beans模块：Spring最大的特点是实现了内置工厂设计模式，包括Bean的信息反射的处理步骤，工厂的设计模型，容器的注册
+        Core模块：Spring的核心模块，是工作在后台的
+        Context模块：描述的是整个Spring的上下文环境
+        Expression Language模块：SpEL相关实现
+        AOP模块：基于字符串表达式来定义切面，基于了CGLIB和原生动态代理实现
+        Aspects模块：提供了AspectJ的集成，利用AspectJ表达式可以更加方便的实现切面的管理
+        Instrumentation模块：检测运行在JVM上的程序
+        JDBC模块：提供一个jdbc操作模板
+        事务管理模块：该模块用于Spring的事务管理
+        ORM模块：提供实体层框架的无缝集成，同时可以利用Spring进行事务管理
+        OXM模块：提供一个Object/XML对象映射，将Java对象转为XML或者将XML转为Java对象
+        JMS模块：用于JMS消息组件整合，提供一套消息“生产者-消费者”处理模型，JMS可以用于在两个程序之间或者分布式系统之间实现消息处理的异步通信
