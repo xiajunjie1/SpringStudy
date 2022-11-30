@@ -10,7 +10,17 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/Aop-Spring" />
+            <option value="$PROJECT_DIR$/Cache" />
+            <option value="$PROJECT_DIR$/Database-Spring" />
             <option value="$PROJECT_DIR$/First-Spring" />
+            <option value="$PROJECT_DIR$/JPA-Spring" />
+            <option value="$PROJECT_DIR$/JPA-SpringData" />
+            <option value="$PROJECT_DIR$/JPA-SpringData/amqp-producer" />
+            <option value="$PROJECT_DIR$/amqp-commons" />
+            <option value="$PROJECT_DIR$/amqp-consumer" />
+            <option value="$PROJECT_DIR$/amqp-producer" />
+            <option value="$PROJECT_DIR$/rabbitMQ" />
           </set>
         </option>
       </GradleProjectSettings>

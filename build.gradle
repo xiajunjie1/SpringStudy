@@ -4,7 +4,15 @@ buildscript {
     apply from: 'dependencies.gradle';//引入所需要的依赖脚本库文件
     repositories {
         //maven {url 'https://repo.spring.io/libs-milestone'}
-        maven {url 'https://maven.aliyun.com/repository/public'}
+        maven {
+            allowInsecureProtocol = true
+           url 'https://maven.aliyun.com/repository/public'
+
+        }
+
+        maven {url 'https://repo.spring.io/libs-milestone'}
+
+
     }
     dependencies {
        // classpath libraries.'spring-boot-gradle-plugin'
@@ -52,15 +60,19 @@ subprojects {//子模块
         testImplementation("org.springframework.boot:spring-boot-starter-test"){
             exclude group:'junit',module:'junit'//排除旧版本的测试工具
         }
+
+        //以下为lombok插件的依赖配置
+        compileOnly(libraries.'lombok');//编译生效
+        annotationProcessor(libraries.'lombok');//注解生效，未配置该环境，无法启用
+    */
         testImplementation(enforcedPlatform(libraries.'junit-bom'));//将当前项目强制绑定为Junit5运行
         testImplementation(libraries.'junit-jupiter-api');
         testImplementation(libraries.'junit-jupiter-engine');
         testImplementation(libraries.'junit-vintage-engine');
         testImplementation(libraries.'junit-platform-launcher');
-        //以下为lombok插件的依赖配置
-        compileOnly(libraries.'lombok');//编译生效
-        annotationProcessor(libraries.'lombok');//注解生效，未配置该环境，无法启用
-    */
+        testImplementation(libraries.'spring-test');
+        implementation(libraries.'slf4j-api');
+        implementation(libraries.'logback-classic');
     }
     sourceSets {    // 源代码目录配置
         main { // main及相关子目录配置
@@ -109,6 +121,119 @@ subprojects {//子模块
     [compileJava, compileTestJava, javadoc]*.options*.encoding = 'UTF-8' // 编码配置
 }
 
-project("First-Spring"){
-    dependencies {}
+project(":First-Spring"){
+    dependencies {
+        implementation(libraries.'spring-context');
+        implementation(libraries.'javax.annotation-api');
+
+    }
+}
+
+project(":Aop-Spring"){
+    dependencies {
+        implementation(libraries.'spring-context');
+        implementation(libraries.'spring-aop');
+        implementation(libraries.'spring-aspects');
+
+    }
+}
+
+project(":Database-Spring"){
+    dependencies {
+        implementation(libraries.'spring-context');
+        implementation(libraries.'spring-jdbc');
+        implementation(libraries.'mysql-connector-java');
+        implementation(libraries.'HikariCP');
+        implementation(libraries.'spring-aop');
+        implementation(libraries.'spring-aspects');
+
+
+    }
+
+}
+
+project(":JPA-Spring"){
+    dependencies {
+        implementation(libraries.'mysql-connector-java');
+        implementation(libraries.'jakarta.persistence-api');
+        implementation(libraries.'hibernate-core');
+        implementation(libraries.'hibernate-hikaricp');
+        implementation(libraries.'hibernate-core-jakarta');
+        implementation(libraries.'hibernate-jcache');
+        implementation(libraries.'ehcache');
+        implementation(libraries.'jaxb-api');
+        implementation(libraries.'jaxb-impl');
+        implementation(libraries.'jaxb-core');
+
+
+    }
+
+}
+
+
+project(":JPA-SpringData"){
+    dependencies {
+        implementation(libraries.'mysql-connector-java');
+        //implementation(libraries.'jakarta.persistence-api');
+        implementation(libraries.'HikariCP');
+       // implementation(libraries.'hibernate-core');
+        implementation(libraries.'hibernate-hikaricp');
+      //  implementation(libraries.'hibernate-core-jakarta');
+        //implementation(libraries.'hibernate-jcache');
+        implementation(libraries.'ehcache');
+        implementation(libraries.'spring-data-jpa');
+        implementation(libraries.'spring-aop');
+        implementation(libraries.'spring-aspects');
+        implementation 'org.hibernate:hibernate-core:5.6.5.Final';//为了适配SpringDataJPA2.X
+        implementation 'org.hibernate:hibernate-jcache:5.6.5.Final';//为了适配hibernate
+        //implementation 'org.springframework.data:spring-data-jpa:3.0.0-SNAPSHOT'
+
+    }
+
+    project(":Cache"){
+        dependencies {
+            implementation(libraries.'caffeine');
+            implementation(libraries.'mysql-connector-java');
+            implementation(libraries.'HikariCP');
+            implementation(libraries.'hibernate-hikaricp');
+            implementation(libraries.'spring-data-jpa');
+            implementation(libraries.'spring-aop');
+            implementation(libraries.'spring-aspects');
+            implementation 'org.hibernate:hibernate-core:5.6.5.Final';//为了适配SpringDataJPA2.X
+            implementation 'org.hibernate:hibernate-jcache:5.6.5.Final';//为了适配hibernate
+            implementation('org.springframework:spring-context-support:5.3.20');
+            implementation(libraries.'Memcached-Java-Client');
+        }
+    }
+
+    project(":rabbitMQ"){
+        dependencies {
+            implementation(libraries.'amqp-client');
+        }
+    }
+
+    project(":amqp-commons"){
+        dependencies {
+
+        }
+    }
+
+    project(":amqp-producer"){
+        dependencies {
+            implementation(project(":amqp-commons"));
+            api(libraries.'spring-rabbit');
+            api(libraries.'commons-pool2');
+            //implementation(libraries.'spring-context');
+        }
+    }
+
+    project(":amqp-consumer"){
+        dependencies {
+            implementation(project(":amqp-commons"));
+            api(libraries.'spring-rabbit');
+           api(libraries.'commons-pool2');
+            //implementation(libraries.'spring-context');
+        }
+    }
+
 }

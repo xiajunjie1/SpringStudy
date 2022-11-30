@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        https://www.springframework.org/schema/context/spring-context-4.3.xsd
+        http://www.springframework.org/schema/aop
+        https://www.springframework.org/schema/aop/spring-aop-4.3.xsd">
+        <bean id="ImessageService" class="com.maker.service.impl.IMessageServiceImpl" />
+<!--        <bean id="MessageConfig" class="com.maker.di.config.MessageConfig" p:host="message.yootk.com" p:port="8869" p:enable="off" />
+            p命名空间依赖注入的使用
+-->
+        <bean id="MessageConfig" class="com.maker.di.config.MessageConfig">
+                <property name="hostname" value="jayjxia.com" />
+                <property name="port" value="8888" />
+                <!--如果属性值是Boolean，那么除了使用true和false以外
+                    还可以使用1（true）和0（false),on（true）和off（false）
+                 -->
+                <property name="enable" value="on" />
+        </bean>
+
+        <bean id="MessageService" class="com.maker.service.MessageService">
+                <property name="messageConfig" ref="MessageConfig" />
+        </bean>
+
+        <!--构造方法依赖注入 -->
+        <bean id="messageConfigCopy" class="com.maker.di.config.MessageConfig_copy" >
+                <!--此处的index是可以省略的，那么注入的顺序就是按照参数的顺序来进行注入，如果想要指定注入的构造方法的参数的顺序，则需要加上index -->
+                <!--此处的index也可以换成name属性，但是需要在相应对象的构造方法上加上@ConstructorProperties注解，为其参数取上名字 -->
+                <constructor-arg index="0" value="jayjxia.com" />
+                <constructor-arg index="1" value="8888" />
+                <constructor-arg index="2" value="on" />
+        </bean>
+        <!-- 集合注入 -->
+        <bean id="allconfigs" class="com.maker.di.collections.AllConfigs">
+                <property name="mconfigs">
+                        <!-- List集合注入，此处的标签若改成array也能成功注入，因为在Spring当中，
+                                List和数组的形式是等价的，同样在类中属性List<MessageConfig>也可以
+                                修改成MessageConfig[]
+                         -->
+                        <list>
+                                <!-- 两种注入方式，一种使用ref引用，一种使用bean直接定义 -->
+                                <ref bean="MessageConfig" />
+                                <ref bean="MessageConfig" /> <!--不会去重 -->
+                                <bean  class="com.maker.di.config.MessageConfig">
+                                   <property name="hostname" value="jjx.com" />
+                                        <property name="port" value="7777" />
+                                        <property name="enable" value="true" />
+                                </bean>
+                        </list>
+                </property>
+                
+                <property name="msets">
+                        <set>
+                                <ref bean="MessageConfig" />
+                                <ref bean="MessageConfig" /> <!--Set集合会去重  -->
+                                <bean  class="com.maker.di.config.MessageConfig">
+                                        <property name="hostname" value="jjx.com" />
+                                        <property name="port" value="7777" />
+                                        <property name="enable" value="true" />
+                                </bean>
+                                <!--由于没有重写hashcode和equals方法，所以此bean不会被去重 -->
+                                <bean  class="com.maker.di.config.MessageConfig">
+                                        <property name="hostname" value="jjx.com" />
+                                        <property name="port" value="7777" />
+                                        <property name="enable" value="true" />
+                                </bean>
+                        </set>
+                </property>
+                <!-- map对象的注入 -->
+                <property name="maps">
+                        <map>
+                                <entry key="config1" value-ref="MessageConfig" />
+                                <entry key="config2">
+                                        <bean  class="com.maker.di.config.MessageConfig">
+                                                <property name="hostname" value="jjx.com" />
+                                                <property name="port" value="7777" />
+                                                <property name="enable" value="true" />
+                                        </bean>
+                                </entry>
+                        </map>
+                </property>
+        </bean>
+
+        <bean id="messageProperties" class="com.maker.di.config.MessageProperties">
+            <property name="subject" value="jayjxiaTest" />
+                <property name="attribute">
+                        <props>
+                                <prop key="item1" >xia</prop>
+                                <prop key="item2">jun</prop>
+                                <prop key="item3">jie</prop>
+                        </props>
+                </property>
+        </bean>
+        <!-- 启用annotation的配置项 -->
+        <context:annotation-config />
+        <!-- 如果配置多个包，中间用逗号进行分隔 -->
+        <context:component-scan base-package="com.maker" />
+
+        <bean id="messageResource" class="com.maker.resource.MessageResource">
+                <!-- 在此处直接注入字符串，Spring会根据字符串自动转为对应的Resource实例 -->
+                <property name="resource" value="classpath:abc.txt" />
+        </bean>
+
+        <bean id="messageResource2" class="com.maker.resource.MessageResource2">
+                <!--注入resources/spring下所有的xml资源文件-->
+                <property name="resources" value="classpath:spring/**/*.xml" />
+                <!--注入jar包中的资源文件 -->
+                <property name="resources2" value="classpath*:**/META-INF/*.MF" />
+        </bean>
+        <!--指定properties配置文件的位置 -->
+        <context:property-placeholder location="classpath:config/*.properties" />
+
+        <bean id="MyBean1" class="com.maker.vo.MyBean" init-method="init" destroy-method="destroy" />
+</beans>

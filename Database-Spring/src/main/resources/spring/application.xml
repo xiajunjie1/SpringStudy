@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        https://www.springframework.org/schema/context/spring-context-4.3.xsd
+        http://www.springframework.org/schema/aop
+        https://www.springframework.org/schema/aop/spring-aop-4.3.xsd
+        http://www.springframework.org/schema/tx
+        https://www.springframework.org/schema/tx/spring-tx-4.3.xsd"
+>
+      <context:annotation-config />
+        <context:component-scan base-package="com.maker.jdbc" />
+        <!--
+        开启事务注解配置
+        transaction-manager是在Spring中注册的transactionManager对象的Bean名称，该Bean是在配置类中进行配置的 -->
+        <tx:annotation-driven transaction-manager="platformTransactionManager" />
+
+        <!--定义事务相关切面 -->
+        <tx:advice transaction-manager="platformTransactionManager" id="txAdvice">
+            <tx:attributes>
+                <tx:method name="add*" propagation="REQUIRED"/>
+                <tx:method name="edit*" propagation="REQUIRED"/>
+                <tx:method name="remove*" propagation="REQUIRED"/>
+                <tx:method name="insert*" propagation="REQUIRED" />
+                <tx:method name="update*" propagation="REQUIRED" />
+                <tx:method name="delete*" propagation="REQUIRED" />
+                <tx:method name="get*" propagation="REQUIRED" read-only="true" />
+            </tx:attributes>
+        </tx:advice>
+
+    <!-- 进行AOP织入事务 -->
+    <aop:config>
+        <aop:pointcut id="txPointcut" expression="execution(public * com.maker.jdbc..service..*.*(..))"/>
+        <aop:advisor advice-ref="txAdvice" pointcut-ref="txPointcut" />
+
+
+    </aop:config>
+</beans>

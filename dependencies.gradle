@@ -1,7 +1,63 @@
 ext.versions=[
             spring  : '5.3.20',
+            junit    :'5.7.1',//配置Junit测试工具的版本号
+            junitplatformlaunch   :'1.7.1',//Junit测试工具运行平台版本编号
+            slf4j       :'1.7.36',
+            logback     :'1.2.11',
+            annotationApi       :'1.3.2',
+            springaop   : '5.3.20',
+            mysql       :'8.0.28',
+            hikaricp    :'5.0.1',
+            jpa         :'3.1.0',
+            hibernateORM    :'6.1.0.Final',
+            hibernate       :'5.6.9.Final',
+            jaxb            :'2.3.1',
+            jaxbcore        :'2.3.0',
+            ehcache         :'3.10.0',
+            springdatajpa   :'2.7.5',
+            caffeine        :'3.1.1',
+            memcached        :'3.0.2',//Memcached Java Client版本号
+            rabbitmq        :'5.15.0',
+            springrabbit    :'2.4.6',
+            commonspool     :'2.11.1',
+
+
 ]
 
 ext.libraries=[
     'spring-context'  :"org.springframework:spring-context:${versions.spring}",
+    //Junit5相关组件
+    'junit-jupiter-api':"org.junit.jupiter:junit-jupiter-api:${versions.junit}",
+    'junit-jupiter-engine':"org.junit.jupiter:junit-jupiter-engine:${versions.junit}",
+    'junit-vintage-engine':"org.junit.vintage:junit-vintage-engine:${versions.junit}",
+    'junit-platform-launcher':"org.junit.platform:junit-platform-launcher:${versions.junitplatformlaunch}",
+    'junit-bom':"org.junit:junit-bom:${versions.junit}",
+    'spring-test':"org.springframework:spring-test:${versions.spring}",
+    //日志相关组件
+    'slf4j-api':"org.slf4j:slf4j-api:${versions.slf4j}",
+    'logback-classic':"ch.qos.logback:logback-classic:${versions.logback}",
+     'javax.annotation-api':"javax.annotation:javax.annotation-api:${versions.annotationApi}",
+        'spring-aop':"org.springframework:spring-aop:${versions.springaop}",
+        'spring-aspects':"org.springframework:spring-aspects:${versions.springaop}",
+        'spring-jdbc':"org.springframework:spring-jdbc:${versions.spring}",
+        'mysql-connector-java':"mysql:mysql-connector-java:${versions.mysql}",
+        'HikariCP':"com.zaxxer:HikariCP:${versions.hikaricp}",
+        'jakarta.persistence-api':"jakarta.persistence:jakarta.persistence-api:${versions.jpa}",
+        'hibernate-core':"org.hibernate.orm:hibernate-core:${versions.hibernateORM}",
+        'hibernate-hikaricp':"org.hibernate.orm:hibernate-hikaricp:${versions.hibernateORM}",
+        'hibernate-core-jakarta':"org.hibernate:hibernate-core-jakarta:${versions.hibernate}",
+        //定义EHCache 二级缓存的相关依赖
+        'hibernate-jcache':"org.hibernate.orm:hibernate-jcache:${versions.hibernateORM}",
+        'ehcache':"org.ehcache:ehcache:${versions.ehcache}",
+        'jaxb-api':"javax.xml.bind:jaxb-api:${versions.jaxb}",
+        'jaxb-impl':"com.sun.xml.bind:jaxb-impl:${versions.jaxb}",
+        'jaxb-core':"com.sun.xml.bind:jaxb-core:${versions.jaxbcore}",
+        'spring-data-jpa':"org.springframework.data:spring-data-jpa:${versions.springdatajpa}",
+        //caffeine组件的依赖
+        'caffeine':"com.github.ben-manes.caffeine:caffeine:${versions.caffeine}",
+        'Memcached-Java-Client':"com.whalin:Memcached-Java-Client:${versions.memcached}",
+        'amqp-client':"com.rabbitmq:amqp-client:${versions.rabbitmq}",
+        'spring-rabbit':"org.springframework.amqp:spring-rabbit:${versions.springrabbit}",
+        'commons-pool2':"org.apache.commons:commons-pool2:${versions.commonspool}",
+
 ]

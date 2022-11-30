@@ -4,22 +4,195 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="37d45280-e5fe-4745-b608-561abec0eaf3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/First-Spring/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Note" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dependencies.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+    <list default="true" id="37d45280-e5fe-4745-b608-561abec0eaf3" name="Changes" comment="创建Spring项目">
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Aop-Spring/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Aop-Spring/src/main/java/com/maker/aop/advice/ServiceAdvice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Aop-Spring/src/main/java/com/maker/aop/advice/ServiceAdviceAnnotation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Aop-Spring/src/main/java/com/maker/aop/config/AopConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Aop-Spring/src/main/java/com/maker/aop/service/IMessageService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Aop-Spring/src/main/java/com/maker/aop/service/impl/MessageServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Aop-Spring/src/main/java/com/maker/main/AopSpringApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Aop-Spring/src/main/resources/spring/beans.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cache/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cache/src/main/java/com/maker/StarterSpringData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cache/src/main/java/com/maker/cache/memcached/MemCached.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cache/src/main/java/com/maker/cache/memcached/MemCachedManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cache/src/main/java/com/maker/config/DataSourceConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cache/src/main/java/com/maker/config/MemcachedConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cache/src/main/java/com/maker/config/SpringCacheConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cache/src/main/java/com/maker/config/SpringDataJPAConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cache/src/main/java/com/maker/config/TransactionAdviceConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cache/src/main/java/com/maker/config/TransactionConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cache/src/main/java/com/maker/dao/IEmpDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cache/src/main/java/com/maker/main/CacheTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cache/src/main/java/com/maker/po/Emp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cache/src/main/java/com/maker/service/IEmpService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cache/src/main/java/com/maker/service/impl/EmpServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cache/src/main/resources/config/database.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cache/src/main/resources/config/jpa.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cache/src/main/resources/config/memcached.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cache/src/test/java/com/maker/test/EmpTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cache/src/test/java/com/maker/test/MemcachedTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Database-Spring/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Database-Spring/src/main/java/com/maker/jdbc/config/DataSourceConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Database-Spring/src/main/java/com/maker/jdbc/config/GlobalConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Database-Spring/src/main/java/com/maker/jdbc/config/HikariCPDataSourceConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Database-Spring/src/main/java/com/maker/jdbc/config/TransactionAdviceConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Database-Spring/src/main/java/com/maker/jdbc/service/BookService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Database-Spring/src/main/java/com/maker/jdbc/service/IBookService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Database-Spring/src/main/java/com/maker/jdbc/service/impl/BookServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Database-Spring/src/main/java/com/maker/jdbc/vo/Book.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Database-Spring/src/main/java/com/maker/main/SpringJDBC.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Database-Spring/src/main/profiles/dev/config/database.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Database-Spring/src/main/resources/spring/application.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/First-Spring/src/main/java/com/maker/aware/DatabaseConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/First-Spring/src/main/java/com/maker/aware/DatabaseConfigPostProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/First-Spring/src/main/java/com/maker/aware/GetDatabaseConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/First-Spring/src/main/java/com/maker/aware/IDatabaseConfigAware.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/First-Spring/src/main/java/com/maker/aware/InitDatabaseConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/First-Spring/src/main/java/com/maker/config/BeanConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/First-Spring/src/main/java/com/maker/config/DeptConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/First-Spring/src/main/java/com/maker/config/MessageChannel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/First-Spring/src/main/java/com/maker/config/MessageChannelConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/First-Spring/src/main/java/com/maker/config/MessageConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/First-Spring/src/main/java/com/maker/config/event/MyEventConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/First-Spring/src/main/java/com/maker/config/profile/dev/MessageConfigDev.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/First-Spring/src/main/java/com/maker/config/profile/product/MessageConfigProduct.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/First-Spring/src/main/java/com/maker/config/profile/test/MessageConfigTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/First-Spring/src/main/java/com/maker/dao/DeptDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/First-Spring/src/main/java/com/maker/dao/impl/DeptDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/First-Spring/src/main/java/com/maker/di/collections/AllConfigs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/First-Spring/src/main/java/com/maker/di/config/MessageConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/First-Spring/src/main/java/com/maker/di/config/MessageConfig_2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/First-Spring/src/main/java/com/maker/di/config/MessageConfig_Profile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/First-Spring/src/main/java/com/maker/di/config/MessageConfig_copy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/First-Spring/src/main/java/com/maker/di/config/MessageProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/First-Spring/src/main/java/com/maker/di/type/MessageSendStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/First-Spring/src/main/java/com/maker/event/MyEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/First-Spring/src/main/java/com/maker/event/listener/MyEventListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/First-Spring/src/main/java/com/maker/factory/DeptFactoryBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/First-Spring/src/main/java/com/maker/lifecycle/BeanInit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/First-Spring/src/main/java/com/maker/lifecycle/BeanInitFactoryPostProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/First-Spring/src/main/java/com/maker/lifecycle/BeanInitPostProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/First-Spring/src/main/java/com/maker/main/AnnotationSpringEventTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/First-Spring/src/main/java/com/maker/main/ProfileTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/First-Spring/src/main/java/com/maker/main/PropertySourceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/First-Spring/src/main/java/com/maker/main/ResourceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/First-Spring/src/main/java/com/maker/main/SpELTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/First-Spring/src/main/java/com/maker/main/StartSpringApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/First-Spring/src/main/java/com/maker/main/refresh方法分析" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/First-Spring/src/main/java/com/maker/processsor/MessageChannelPostProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/First-Spring/src/main/java/com/maker/resource/MessageResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/First-Spring/src/main/java/com/maker/resource/MessageResource2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/First-Spring/src/main/java/com/maker/service/IDeptService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/First-Spring/src/main/java/com/maker/service/IMessageService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/First-Spring/src/main/java/com/maker/service/MessageService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/First-Spring/src/main/java/com/maker/service/impl/IDeptServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/First-Spring/src/main/java/com/maker/service/impl/IMessageServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/First-Spring/src/main/java/com/maker/vo/Book_SpEL.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/First-Spring/src/main/java/com/maker/vo/Dept.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/First-Spring/src/main/java/com/maker/vo/MemberPrototype.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/First-Spring/src/main/java/com/maker/vo/MemberSingleton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/First-Spring/src/main/java/com/maker/vo/Message.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/First-Spring/src/main/java/com/maker/vo/MyBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/First-Spring/src/main/java/com/maker/vo/MyBean2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/First-Spring/src/main/java/com/maker/vo/MyBean3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/First-Spring/src/main/java/com/maker/vo/MyBean4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/First-Spring/src/main/profiles/dev/config/Book.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/First-Spring/src/main/profiles/product/config/Book.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/First-Spring/src/main/resources/abc.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/First-Spring/src/main/resources/i18n/Message.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/First-Spring/src/main/resources/i18n/Message_en_US.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/First-Spring/src/main/resources/i18n/Message_zh_CN.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/First-Spring/src/main/resources/logback.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/First-Spring/src/main/resources/spring/application.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/First-Spring/src/main/resources/spring/jayjxia/logback1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/First-Spring/src/main/resources/spring/jayjxia/logback2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/First-Spring/src/test/java/com/maker/test/ProfileTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/First-Spring/src/test/java/com/maker/test/SpringTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JPA-Spring/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JPA-Spring/src/main/java/com/maker/main/SpringJPA.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JPA-Spring/src/main/java/com/maker/po/Course.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JPA-Spring/src/main/java/com/maker/po/Details.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JPA-Spring/src/main/java/com/maker/po/Jpadept.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JPA-Spring/src/main/java/com/maker/po/Jpaemp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JPA-Spring/src/main/java/com/maker/po/Jpamember.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JPA-Spring/src/main/java/com/maker/po/Jparole.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JPA-Spring/src/main/java/com/maker/po/Login.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JPA-Spring/src/main/java/com/maker/util/DateUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JPA-Spring/src/main/java/com/maker/util/JpaUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JPA-Spring/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JPA-Spring/src/main/resources/ehcache.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JPA-Spring/src/test/java/com/maker/test/PessimisticTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JPA-SpringData/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JPA-SpringData/src/main/java/com/maker/SpringDataJPAStart.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JPA-SpringData/src/main/java/com/maker/config/DataSourceConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JPA-SpringData/src/main/java/com/maker/config/SpringDataJPAConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JPA-SpringData/src/main/java/com/maker/config/TransactionAdviceConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JPA-SpringData/src/main/java/com/maker/config/TransactionConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JPA-SpringData/src/main/java/com/maker/dao/ICompanyDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JPA-SpringData/src/main/java/com/maker/dao/ICompanyDao2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JPA-SpringData/src/main/java/com/maker/dao/ICompanyDao3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JPA-SpringData/src/main/java/com/maker/dao/ICompanyDao4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JPA-SpringData/src/main/java/com/maker/dao/ICompanyDao5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JPA-SpringData/src/main/java/com/maker/main/SpringDataJPA.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JPA-SpringData/src/main/java/com/maker/main/TransactionTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JPA-SpringData/src/main/java/com/maker/po/Company.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JPA-SpringData/src/main/profiles/dev/config/database.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JPA-SpringData/src/main/profiles/dev/config/jpa.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/amqp-commons/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/amqp-consumer/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/amqp-consumer/src/main/java/com/maker/common/Dept.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/amqp-consumer/src/main/java/com/maker/consumer/StartConsumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/amqp-consumer/src/main/java/com/maker/consumer/config/RabbitMQConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/amqp-consumer/src/main/java/com/maker/consumer/config/RabbitMQConfigAnnotation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/amqp-consumer/src/main/java/com/maker/consumer/listener/RabbitMQMessageListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/amqp-consumer/src/main/java/com/maker/consumer/listener/RabbitMQMessageListenerAnnotation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/amqp-consumer/src/main/profiles/dev/config/amqp.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/amqp-consumer/src/test/java/com/maker/test/ConsumerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/amqp-producer/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/amqp-producer/src/main/java/com/maker/common/Dept.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/amqp-producer/src/main/java/com/maker/producer/StartProducer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/amqp-producer/src/main/java/com/maker/producer/config/RabbitMQConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/amqp-producer/src/main/java/com/maker/producer/service/IMessageService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/amqp-producer/src/main/java/com/maker/producer/service/impl/MessageServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/amqp-producer/src/main/profiles/dev/config/amqp.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/amqp-producer/src/test/java/com/maker/test/ProducerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2022-10/jayjxia_2022-10-04.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2022-10/jayjxia_2022-10-10.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2022-10/jayjxia_2022-10-11.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2022-10/jayjxia_2022-10-13.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2022-10/jayjxia_2022-10-14.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2022-10/jayjxia_2022-10-17.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2022-10/jayjxia_2022-10-18.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2022-10/jayjxia_2022-10-20.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2022-10/jayjxia_2022-10-22.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2022-10/jayjxia_2022-10-24.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2022-10/jayjxia_2022-10-26.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rabbitMQ/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rabbitMQ/src/main/java/com/maker/main/RabbitMQTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rabbitMQ/src/main/java/com/maker/rabbitmq/consumer/MessageConsumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rabbitMQ/src/main/java/com/maker/rabbitmq/consumer/direct/GroupAMessageConsumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rabbitMQ/src/main/java/com/maker/rabbitmq/consumer/direct/GroupBMessageConsumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rabbitMQ/src/main/java/com/maker/rabbitmq/consumer/fanout/GroupAMessageConsumerA.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rabbitMQ/src/main/java/com/maker/rabbitmq/consumer/fanout/GroupAMessageConsumerB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rabbitMQ/src/main/java/com/maker/rabbitmq/consumer/fanout/GroupBMessageConsumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rabbitMQ/src/main/java/com/maker/rabbitmq/consumer/fanout/GroupCMessageConsumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rabbitMQ/src/main/java/com/maker/rabbitmq/consumer/topic/DeptConsumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rabbitMQ/src/main/java/com/maker/rabbitmq/consumer/topic/EmpConsumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rabbitMQ/src/main/java/com/maker/rabbitmq/producer/MessageProducer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rabbitMQ/src/main/java/com/maker/rabbitmq/producer/direct/DirectMessageProducer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rabbitMQ/src/main/java/com/maker/rabbitmq/producer/fanout/FanoutMessageProducer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rabbitMQ/src/main/java/com/maker/rabbitmq/producer/topic/TopicCrmProducer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rabbitMQ/src/main/java/com/maker/rabbitmq/producer/topic/TopicErpProducer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/First-Spring/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/First-Spring/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dependencies.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/dependencies.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,11 +204,168 @@
       <ProjectState />
     </projectState>
   </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/First-Spring">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/JPA-SpringData">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/Cache">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="SpringDemo" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="SpringDemo" type="f1a62948:ProjectNode" />
+                <item name="amqp-producer" type="2d1252cf:ModuleNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="SpringDemo" type="f1a62948:ProjectNode" />
+                <item name="amqp-producer" type="2d1252cf:ModuleNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="SpringDemo" type="f1a62948:ProjectNode" />
+                <item name="amqp-producer" type="2d1252cf:ModuleNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+                <item name="compileClasspath" type="62daadca:ExternalSystemViewDefaultContributor$DependencyScopeExternalSystemNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="SpringDemo" type="f1a62948:ProjectNode" />
+                <item name="amqp-producer" type="2d1252cf:ModuleNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+                <item name="compileClasspath" type="62daadca:ExternalSystemViewDefaultContributor$DependencyScopeExternalSystemNode" />
+                <item name="org.springframework.amqp:spring-rabbit:2.4.6" type="b3323d55:ExternalSystemViewDefaultContributor$DependencyExternalSystemNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="SpringDemo" type="f1a62948:ProjectNode" />
+                <item name="amqp-producer" type="2d1252cf:ModuleNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+                <item name="compileClasspath" type="62daadca:ExternalSystemViewDefaultContributor$DependencyScopeExternalSystemNode" />
+                <item name="org.springframework.amqp:spring-rabbit:2.4.6" type="b3323d55:ExternalSystemViewDefaultContributor$DependencyExternalSystemNode" />
+                <item name="org.springframework:spring-context:5.3.21" type="b3323d55:ExternalSystemViewDefaultContributor$DependencyExternalSystemNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="SpringDemo" type="f1a62948:ProjectNode" />
+                <item name="amqp-producer" type="2d1252cf:ModuleNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+                <item name="compileClasspath" type="62daadca:ExternalSystemViewDefaultContributor$DependencyScopeExternalSystemNode" />
+                <item name="org.springframework.amqp:spring-rabbit:2.4.6" type="b3323d55:ExternalSystemViewDefaultContributor$DependencyExternalSystemNode" />
+                <item name="org.springframework:spring-context:5.3.21" type="b3323d55:ExternalSystemViewDefaultContributor$DependencyExternalSystemNode" />
+                <item name="org.springframework:spring-aop:5.3.21" type="b3323d55:ExternalSystemViewDefaultContributor$DependencyExternalSystemNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="SpringDemo" type="f1a62948:ProjectNode" />
+                <item name="amqp-producer" type="2d1252cf:ModuleNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+                <item name="compileClasspath" type="62daadca:ExternalSystemViewDefaultContributor$DependencyScopeExternalSystemNode" />
+                <item name="org.springframework.amqp:spring-rabbit:2.4.6" type="b3323d55:ExternalSystemViewDefaultContributor$DependencyExternalSystemNode" />
+                <item name="org.springframework:spring-context:5.3.21" type="b3323d55:ExternalSystemViewDefaultContributor$DependencyExternalSystemNode" />
+                <item name="org.springframework:spring-aop:5.3.21" type="b3323d55:ExternalSystemViewDefaultContributor$DependencyExternalSystemNode" />
+                <item name="org.springframework:spring-beans:5.3.21" type="b3323d55:ExternalSystemViewDefaultContributor$DependencyExternalSystemNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="SpringDemo" type="f1a62948:ProjectNode" />
+                <item name="Cache" type="2d1252cf:ModuleNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="SpringDemo" type="f1a62948:ProjectNode" />
+                <item name="Cache" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="SpringDemo" type="f1a62948:ProjectNode" />
+                <item name="Cache" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="SpringDemo" type="f1a62948:ProjectNode" />
+                <item name="JPA-SpringData" type="2d1252cf:ModuleNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="SpringDemo" type="f1a62948:ProjectNode" />
+                <item name="JPA-SpringData" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="SpringDemo" type="f1a62948:ProjectNode" />
+                <item name="JPA-SpringData" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="SpringDemo" type="f1a62948:ProjectNode" />
+                <item name="JPA-SpringData" type="2d1252cf:ModuleNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="SpringDemo" type="f1a62948:ProjectNode" />
+                <item name="JPA-SpringData" type="2d1252cf:ModuleNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+                <item name="runtimeClasspath" type="62daadca:ExternalSystemViewDefaultContributor$DependencyScopeExternalSystemNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="SpringDemo" type="f1a62948:ProjectNode" />
+                <item name="JPA-SpringData" type="2d1252cf:ModuleNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+                <item name="runtimeClasspath" type="62daadca:ExternalSystemViewDefaultContributor$DependencyScopeExternalSystemNode" />
+                <item name="org.ehcache:ehcache:3.10.0" type="b3323d55:ExternalSystemViewDefaultContributor$DependencyExternalSystemNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/JPA-SpringData/src/main/java/com/maker/config/SpringDataJPAConfig.java" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2FYuj3cOYl4PFzANY4w8R2xlV6g" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -45,20 +375,174 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "jdk.selected.JAVA_MODULE": "17",
-    "last_opened_file_path": "E:/IdeaProject/Microboot",
-    "settings.editor.selected.configurable": "File.Encoding"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/IdeaProject/SpringDemo/Cache/src/main/java/com/maker/config&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;File.Encoding&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\IdeaProject\SpringDemo\Cache\src\main\java\com\maker\config" />
+      <recent name="E:\IdeaProject\SpringDemo\Cache\src\main\resources\config" />
+      <recent name="E:\IdeaProject\SpringDemo\JPA-SpringData\src\main\profiles\dev\config" />
+      <recent name="E:\IdeaProject\SpringDemo\Database-Spring\src\main\resources\spring" />
+      <recent name="E:\IdeaProject\SpringDemo\First-Spring\src\main\resources\spring\jayjxia" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\IdeaProject\SpringDemo\Database-Spring\src\main\profiles\dev\config" />
+      <recent name="E:\IdeaProject\SpringDemo\First-Spring\src\main\profiles\product\config" />
+      <recent name="E:\IdeaProject\SpringDemo\First-Spring\src\main\profiles\dev\config" />
       <recent name="E:\IdeaProject\SpringDemo" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.maker.consumer.config" />
+      <recent name="com.maker.producer.config" />
+      <recent name="com.maker.rabbitmq.consumer.topic" />
+      <recent name="com.maker.rabbitmq.producer.topic" />
+      <recent name="com.maker.rabbitmq.consumer.direct" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Gradle.ProducerTest.sendBatch">
+    <configuration name="ConsumerTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":amqp-consumer:test" />
+            <option value="--tests" />
+            <option value="&quot;com.maker.test.ConsumerTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="ConsumerTest.springConsumerTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":amqp-consumer:test" />
+            <option value="--tests" />
+            <option value="&quot;com.maker.test.ConsumerTest.springConsumerTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="ProducerTest.sendBatch" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":amqp-producer:test" />
+            <option value="--tests" />
+            <option value="&quot;com.maker.test.ProducerTest.sendBatch&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="ProducerTest.sendObjectTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":amqp-producer:test" />
+            <option value="--tests" />
+            <option value="&quot;com.maker.test.ProducerTest.sendObjectTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="ProducerTest.sendTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":amqp-producer:test" />
+            <option value="--tests" />
+            <option value="&quot;com.maker.test.ProducerTest.sendTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Gradle.ProducerTest.sendBatch" />
+      <item itemvalue="Gradle.ProducerTest.sendObjectTest" />
+      <item itemvalue="Gradle.ConsumerTest" />
+      <item itemvalue="Gradle.ConsumerTest.springConsumerTest" />
+      <item itemvalue="Gradle.ProducerTest.sendTest" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.ProducerTest.sendBatch" />
+        <item itemvalue="Gradle.ConsumerTest" />
+        <item itemvalue="Gradle.ProducerTest.sendObjectTest" />
+        <item itemvalue="Gradle.ProducerTest.sendTest" />
+        <item itemvalue="Gradle.ConsumerTest.springConsumerTest" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -69,6 +553,14 @@
       <option name="presentableId" value="Default" />
       <updated>1664681474281</updated>
     </task>
+    <task id="LOCAL-00001" summary="创建Spring项目">
+      <created>1664787153303</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1664787153303</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -84,6 +576,22 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="创建Spring项目" />
+    <option name="LAST_COMMIT_MESSAGE" value="创建Spring项目" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/amqp-consumer/src/main/java/com/maker/consumer/config/RabbitMQConfig.java</url>
+          <line>138</line>
+          <properties class="com.maker.consumer.config.RabbitMQConfig" method="admin">
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

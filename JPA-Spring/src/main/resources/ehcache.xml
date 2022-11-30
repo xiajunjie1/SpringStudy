@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ehcache>
+    <diskStore path="java.io.tmpdir/jayj"/>      <!-- 设置临时缓存路径 -->
+    <!--
+    maxElementsInMemory：缓存中允许保存的最大元素个数
+    eternal：是否允许自动失效
+    timeToIdleSeconds：缓存失效时间
+    timeToLiveSeconds：最大存活时间
+    maxElementsOnDisk：磁盘最大保存元素个数
+    diskExpiryThreadIntervalSeconds：对象检测线程运行时间间隔
+
+    -->
+    <defaultCache
+            maxElementsInMemory="10000"
+            eternal="true"
+            timeToIdleSeconds="120"
+            timeToLiveSeconds="120"
+            maxElementsOnDisk="10000000"
+            diskExpiryThreadIntervalSeconds="120"
+            memoryStoreEvictionPolicy="LRU"/> <!-- 设置缓存策略 -->
+</ehcache>
